@@ -41,3 +41,30 @@ export type {
   TransactionResult,
 } from "./types";
 export type { StablecoinSymbol, ChainId } from "./constants";
+
+// Validation
+export {
+  isValidAddress,
+  isValidPrice,
+  isValidProductName,
+  isValidDescription,
+  isValidTokenId,
+  validateAddProductParams,
+} from "./validation";
+
+// Retry
+export { withRetry } from "./retry";
+export type { RetryOptions } from "./retry";
+
+// Cache
+export { Cache } from "./cache";
+
+// Logger
+export { logger, setLogLevel, getLogLevel, LogLevel } from "./logger";
+
+// Version
+export { SDK_VERSION, MIN_ETHERS_VERSION, printSDKInfo } from "./version";
+
+// Gas estimation
+export { estimateGas, addGasBuffer } from "./gas";
+export type { GasEstimate } from "./gas";
