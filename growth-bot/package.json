@@ -1,0 +1,14 @@
+{
+  "name": "celo-minimarket-growth-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Install and smoke-check celo-minimarket SDK",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "celo-minimarket": "latest"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
