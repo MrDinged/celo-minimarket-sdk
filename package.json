@@ -1,7 +1,7 @@
 {
   "name": "celo-minimarket",
   "version": "1.0.0",
-  "description": "SDK for interacting with the CeloMiniMarket smart contract on Celo — a MiniPay-compatible NFT marketplace for listing, purchasing, and managing products with cUSD stablecoins.",
+  "description": "SDK for interacting with the CeloMiniMarket smart contract on Celo \u2014 a MiniPay-compatible NFT marketplace for listing, purchasing, and managing products with cUSD stablecoins.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
@@ -28,7 +28,9 @@
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:types": "tsc -p tsconfig.types.json",
     "clean": "rm -rf dist",
-    "prepublishOnly": "npm run clean && npm run build"
+    "prepublishOnly": "npm run clean && npm run build",
+    "lint": "tsc --noEmit",
+    "prebuild": "npm run lint"
   },
   "keywords": [
     "celo",
@@ -73,5 +75,8 @@
     "@types/react": "^19.2.14",
     "ethers": "^5.8.0",
     "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
