@@ -1,7 +1,7 @@
-import {
+const {
   CONTRACTS,
   CeloMiniMarket,
-} from 'celo-minimarket';
+} = require('celo-minimarket');
 
 console.log('Celo MiniMarket Growth Bot running...');
 console.log('SDK Contract Address:', CONTRACTS.CeloMiniMarket);
