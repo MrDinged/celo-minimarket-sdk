@@ -1,5 +1,10 @@
 # celo-minimarket
 
+[![npm version](https://img.shields.io/npm/v/celo-minimarket.svg)](https://www.npmjs.com/package/celo-minimarket)
+[![CI](https://github.com/phessophissy/celo-minimarket-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/phessophissy/celo-minimarket-sdk/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 SDK for interacting with the **CeloMiniMarket** smart contract on the Celo blockchain — a MiniPay-compatible NFT marketplace for listing, purchasing, and managing products with cUSD stablecoins.
 
 ## Installation
