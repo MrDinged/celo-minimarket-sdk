@@ -1,0 +1,77 @@
+{
+  "name": "celo-minimarket",
+  "version": "1.0.0",
+  "description": "SDK for interacting with the CeloMiniMarket smart contract on Celo — a MiniPay-compatible NFT marketplace for listing, purchasing, and managing products with cUSD stablecoins.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./react": {
+      "import": "./dist/esm/react/index.js",
+      "require": "./dist/cjs/react/index.js",
+      "types": "./dist/types/react/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm && npm run build:types",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:types": "tsc -p tsconfig.types.json",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "celo",
+    "minimarket",
+    "minipay",
+    "nft",
+    "marketplace",
+    "stablecoin",
+    "cusd",
+    "web3",
+    "ethereum",
+    "erc721",
+    "dapp",
+    "sdk",
+    "smart-contract",
+    "celo-blockchain",
+    "mobile-first"
+  ],
+  "author": "phessophissy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phessophissy/celo-minimarket-sdk.git"
+  },
+  "homepage": "https://github.com/phessophissy/celo-minimarket-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/phessophissy/celo-minimarket-sdk/issues"
+  },
+  "peerDependencies": {
+    "ethers": "^5.7.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.2.14",
+    "ethers": "^5.8.0",
+    "typescript": "^5.8.3"
+  }
+}
